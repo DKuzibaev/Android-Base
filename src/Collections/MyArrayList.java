@@ -7,6 +7,10 @@ public class MyArrayList {
     private String[] array = new String[10];
     private int size = 0;
 
+    public String get (int index){
+        return array[index];
+    }
+
     public void add(String element){
         array[size] = element;
         size++;
@@ -36,4 +40,10 @@ public class MyArrayList {
             }
         }
     }
+
+    public int getSize() {
+        return size;
+    }
+
+
 }
